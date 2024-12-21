@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arngren || Home</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="nav">
+        <img src="Pictures/logo.gif" alt="Arngren Logo" class="logo">
+        <h4>Arngren.net</h4>
+        <div class="cart-icon" id="cartIcon">
+            Cart (<span id="cartCount">0</span>)
+        </div>
+        <div class="menu" id="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <aside id="side">
+        <h2 style="float: right; cursor: pointer; color: snow;" id="closeMenu">X</h2>
+        <h1 style="font-weight: 900;">Navigate</h1>
+        <a href="#trending">Trending</a>
+        <a href="#new">New In</a>
+        <a href="#gadgets">Gadgets</a>
+        <a href="#cars">Cars</a>
+        <a href="#toys">Toys</a>
+        <a href="#homeappliances">Home Appliances</a>
+    </aside>
+
+    <!-- Main Image -->
+    <div class="image">
+        <div class="overlay">
+            <h1>www.Arngren.net</h1>
+            <p>Technology & Gadgets</p>
+        </div>
+    </div>
+
+    <!-- Sections -->
+    <!-- Trending Section -->
+    <h1 id="trending">Trending</h1>
+    <div class="trending" id="trendingProducts">
+        <div class="product">
+            <div class="product-image" style="background-image: url('pictures/toyota1.jpg');"></div>
+            <h3>Brown Toyota Car</h3>
+            <p>$15000</p>
+            <div class="stars">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+            <p class="ratingText">Rating: 0</p>
+
+            <textarea placeholder="Write your review..." class="review-input"></textarea>
+            <button class="submit-review">Submit Review</button>
+            <!-- Add to Cart Button -->
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- New In Section -->
+    <h1 id="new">New In</h1>
+    <div class="trending" id="newProducts">
+        <div class="product">
+            <div class="product-image" style="background-image: url('pictures/macbook.jpg');"></div>
+            <h3>White Macbook</h3>
+            <p>$1200</p>
+            <div class="stars">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+            <p id="ratingText">Rating: 0</p>
+            <textarea placeholder="Write your review..." class="review-input"></textarea>
+            <button class="submit-review">Submit Review</button>
+            <!-- Add to Cart Button -->
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Gadgets Section -->
+    <h1 id="gadgets">Gadgets</h1>
+    <div class="trending" id="gadgetProducts">
+        <div class="product">
+            <div class="product-image" style="background-image: url('pictures/drone.jpg');"></div>
+            <h3>White Drone</h3>
+            <p>$800</p>
+            <div class="stars">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+            <p id="ratingText">Rating: 0</p>
+            <textarea placeholder="Write your review..." class="review-input"></textarea>
+            <button class="submit-review">Submit Review</button>
+            <!-- Add to Cart Button -->
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Cars Section -->
+    <h1 id="cars">Cars</h1>
+    <div class="trending" id="carProducts">
+        <div class="product">
+            <div class="product-image" style="background-image: url('pictures/LUXURY-CAR.png');"></div>
+            <h3>Black Mercedes Benz</h3>
+            <p>$25000</p>
+            <div class="stars">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+            <p id="ratingText">Rating: 0</p>
+            <textarea placeholder="Write your review..." class="review-input"></textarea>
+            <button class="submit-review">Submit Review</button>
+            <!-- Add to Cart Button -->
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Toys Section -->
+    <h1 id="toys">Toys</h1>
+    <div class="trending" id="toysProducts">
+        <div class="product">
+            <div class="product-image" style="background-image: url('pictures/aeroplane.jpg');"></div>
+            <h3>Aeroplane Toy</h3>
+            <p>$50</p>
+            <div class="stars">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+            <p id="ratingText">Rating: 0</p>
+            <textarea placeholder="Write your review..." class="review-input"></textarea>
+            <button class="submit-review">Submit Review</button>
+            <!-- Add to Cart Button -->
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Home Appliances Section -->
+    <h1 id="homeappliances">Home Appliances</h1>
+    <div class="trending" id="homeappliancesProducts">
+        <div class="product">
+            <div class="product-image" style="background-image: url('pictures/Refrigerator.jpg');"></div>
+            <h3>Refrigerator</h3>
+            <p>$1000</p>
+            <div class="stars">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+            <p id="ratingText">Rating: 0</p>
+            <textarea placeholder="Write your review..." class="review-input"></textarea>
+            <button class="submit-review">Submit Review</button>
+            <!-- Add to Cart Button -->
+            <button class="cart" onclick=`addToCart(${product.id})`>Add to Cart</button>
+
+        </div>
+    </div>
+    
+    <!-- Cart Modal -->
+    <div id="cartModal" class="cart-modal">
+        <h2>Shopping Cart</h2>
+        <div id="cartItems"></div>
+        <div class="cart-footer">
+            <p>Total: $<span id="totalPrice">0.00</span></p>
+            <button id="checkout">Checkout</button>
+            <button id="closeCart">Close</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="column">
+            <img src="Pictures/logo.gif" class="bottom-logo">
+            <p>Norway</p>
+            <p>123-456-7890</p>
+            <p>fritjof@arngren.net</p>
+        </div>
+        <p>&copy; Copyright 1995-2021 Arngren Inc. | All Rights Reserved</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

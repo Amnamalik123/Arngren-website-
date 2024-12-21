@@ -1,0 +1,334 @@
+/* Updated CSS File */
+
+/* Global Reset and Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: linear-gradient(to top, #ecd6e5, #b5aebd);
+}
+
+
+/* Navigation Bar */
+.nav {
+ 
+    width: 100%;
+    height: 70px;
+    top: 0;
+    position: fixed;
+    background-color: black;
+    opacity: 0.8;
+    display: flex;
+      align-items: center;
+    justify-content: space-between;
+    color: #9FE2BF;
+    font-size: 1.5em;
+    z-index: 100;
+    transition: 0.3s ease-in-out;
+  
+}
+.nav img.logo {
+    height: 50px; /* Adjust logo size */
+    margin-right: -780px; 
+    margin-left: 40px;/* Reduce space between logo and text */
+}
+
+.nav h4 {
+    font-size: 1.2rem; /* Adjust text size */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.cart-icon {
+    margin-right: -600px;
+    cursor: pointer;
+    
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 50px;
+   
+}
+
+.menu span {
+    background-color: #9FE2BF;
+    height: 3px;
+    margin: 2px 0;
+    width: 25px;
+}
+
+/* Sidebar Navigation */
+aside {
+    width: 40vw;
+    background-color: black;
+    color: #FFFAFA;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease;
+    z-index: 200;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+aside.show {
+    transform: translateX(0);
+}
+
+aside h1 {
+    font-size: 2.2em;
+    color: #9FE2BF;
+}
+
+aside a {
+    display: block;
+    padding: 10px 0;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #FFFAFA;
+    border-bottom: 1px solid #9FE2BF;
+}
+
+aside a:hover {
+    background-color: #9FE2BF;
+    color: black;
+}
+
+/* Main Image Section */
+.image {
+    height: 110vh;
+    background: url("pictures/LUXURY-CAR.png") center/cover no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFAFA;
+    text-align: center;
+    z-index: 2;
+}
+
+.overlay h1 {
+    font-size: 2em;
+    color: wheat;
+}
+
+.overlay p {
+    font-size: 1.5em;
+    margin-top: -10px;
+    color: wheat;
+}
+
+/* Updated Product Section Styling */
+.trending {
+    width: 100%;
+    height: auto;
+    padding: 25px 0;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+/* Center the headings */
+h1 {
+    text-align: center; /* Align the text in the center */
+    font-size: 2em; /* Adjust the font size */
+    margin: 20px 0; /* Add vertical spacing */
+    color: #333; /* Optional: heading color */
+    font-weight: bold; /* Optional: make text bold */
+}
+
+/* Optional: Add spacing between heading and the section */
+.trending + h1,
+.new + h1,
+.toys + h1 {
+    margin-top: 50px; /* Space between sections */
+}
+
+
+.product {
+    width: 290px;
+    height: 410px;
+    box-shadow: 0 0 8px #968e9e;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 20px;
+    background: #f6f6f6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(108, 20, 208, 0.2);
+}
+
+.product-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px 4px 0 0;
+}
+
+.product h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 8px 0;
+}
+
+.product p {
+    font-size: 1em;
+    color: #777;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 5px 0;
+}
+
+.star {
+    font-size: 1em;
+    color: lightgray;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.star:hover,
+.star.selected {
+    color: #FFD700;
+}
+
+textarea.review-input {
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: none;
+}
+
+button.submit-review
+{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
+}
+button.submit-review:hover
+{
+    background-color: #45a049;
+}
+/* Add to Cart Button Styling */
+button.cart {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
+}
+
+/* Hover Effect */
+button.cart:hover {
+    background-color: #45a049; /* Slightly darker green */
+}
+
+/* Active State */
+button.cart:active {
+    background-color: #388E3C; /* Even darker green when clicked */
+}
+.product button {
+    display: inline-block; /* Align buttons inline */
+    margin-right: 5px; /* Space between buttons */
+}
+.cart-modal {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    background: white;
+    padding: 20px;
+    width: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    overflow-y: auto;
+    max-height: 70vh;
+}
+
+.cart-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+
+
+
+/* Footer Section */
+.footer {
+    width: 100%;
+    background: #080808;
+    padding: 20px 0;
+    text-align: center;
+    color: #e4dddd;
+}
